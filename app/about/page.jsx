@@ -1,8 +1,11 @@
+import styles from './About.module.css'
 
-const AboutPage = () => {
+const About = () => {
   return (
-    <div>HOLA SOY UN ABOUT</div>
-  )
-}
+    <main className={styles.main}>
+      <h1>ABOUT</h1>
+    </main>
+  );
+};
 
-export default AboutPage
+export default About;
