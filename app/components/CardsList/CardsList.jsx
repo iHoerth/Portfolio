@@ -7,6 +7,7 @@ const CardsList = () => {
     <section className={styles.cardsList}>
       {projects.map((project) => (
         <Card
+          key={project.name}
           name={project.name}
           link={project.source_link}
           description={project.description}

@@ -7,7 +7,9 @@ const Footer = () => {
     <div className={styles.container}>
       <div>Footer</div>
       {contact.map((media) => (
-        <Link href={media.url} target='_blank'>{media.name}</Link>
+        <Link key={media.name} href={media.url} target="_blank">
+          {media.name}
+        </Link>
       ))}
     </div>
   );
